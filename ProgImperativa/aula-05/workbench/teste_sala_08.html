@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function saudar() {
+            var nomeDoUsuario = prompt('Qual é o seu nome ?');
+            var dolares = 0;
+            var reais = 0;
+            dolares = prompt('Quantos dolares você gostaria de cotar ? ');
+            var confirm = window.confirm('Deseja continuar ?');
+            reais = 5.3;
+            while (confirm == false) {
+                dolares = prompt('Quantos dolares você gostaria de cotar ? '); 
+                confirm = window.confirm('Deseja continuar ?');
+            } 
+            
+            alert(
+                `Olá ${nomeDoUsuario}. US$ ${dolares} vale R$ ${dolares * reais} hoje.`)
+        }
+
+        saudar()
+    </script>
+</body>
+</html>
