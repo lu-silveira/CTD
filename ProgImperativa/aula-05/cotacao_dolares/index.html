@@ -24,7 +24,7 @@
 
             confirm(mensagem);
         */
-
+        
         // 1. Guarda o nome do usuário.
         var nomeDoUsuario = prompt('Qual o seu nome?');
         // 2. Guarda a quantidade de dolares que o usuário deseja cotar.
@@ -33,12 +33,12 @@
         
         function dolares() {
             quantidadeDolares = prompt('Quantos dólares gostaria de cotar?');
-        };
+            };
 
         function calcula() {
-            var cotacaoDolarHoje = 5.3;
+            var cotacaoDolarHoje = 5.4;
             var saudar = alert(`Olá ${nomeDoUsuario}. US$ ${quantidadeDolares} valem R$ ${quantidadeDolares * cotacaoDolarHoje} hoje.`);
-        }
+            }
         var confirma = window.confirm(`Você confirma o valor de US$ ${quantidadeDolares}?`);
       
         if (confirma) {
@@ -47,9 +47,15 @@
         else {
             dolares()
             calcula();
-        }
+        };
         
-        setTimeout(window.location.href = "https://www.bcb.gov.br/estabilidadefinanceira/fechamentodolar", 5000)
+        // function redireciona () {
+        //     window.location.href = "https://www.bcb.gov.br/estabilidadefinanceira/fechamentodolar"; 
+        //     };
+
+        // setTimeout(redireciona(), {alert("Aguarde para ser redirecionado");}, 10000);
+        
+        
     </script>
 </body>
 </html>
