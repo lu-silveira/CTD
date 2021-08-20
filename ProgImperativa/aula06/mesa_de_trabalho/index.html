@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <script>
+    function imc () {
+        var nomeUser = prompt("Qual é seu nome?");
+        var peso = prompt("Qual é seu peso?");
+        var altura = prompt("Qual é sua altura?");
+        var resultado = Math.round(peso / (altura * altura));
+         
+        if (resultado <= 18.5){
+            alert(`${nomeUser}, seu imc é ${resultado}. Seu IMC indica magreza, grau 0`)
+        } else if (resultado <= 24.9) {
+            alert(`${nomeUser}, seu imc é ${resultado}. IMC normal, grau 0`)
+        } else if (resultado <= 29.9) {
+            alert(`${nomeUser}, seu IMC é ${resultado}. Seu IMC indica sobrepeso, grau I.`)
+        } else if (resultado <= 39.9) {
+            alert(`${nomeUser}, seu imc é ${resultado}. Seu IMC indica obesidade, grau II`)
+        } else {
+            alert(`${nomeUser}, seu imc é ${resultado}. Seu IMC corresponde a obesidade grave, grau III.`)
+        }
+
+         }
+        alert("INSTRUÇÕES: não use vírgula, apenas ponto. ")
+        imc()
+    </script>
+
+</body>
+</html>
