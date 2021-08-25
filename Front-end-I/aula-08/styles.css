@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.titulo-principal {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    color: darkslateblue;
+    text-align: center;
+}
+
+div {
+    height: 200px;
+    background-image: url('https://atlantis.nyc3.digitaloceanspaces.com/media/legacy/atlantis/Things_To_Do/Water_Park/Beaches/Hero/Experiences_Beach.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
