@@ -36,15 +36,19 @@
                 }
                } else {
                     alert("Agradecemos seu contato.")
-            }
+            };
                 
                 var confirma = window.confirm(`Agradecemos seu contato, ${paciente.nome}. Sua consulta com a Dra. Luana Nagydai será em ${paciente.data} no horário escolhido: ${paciente.hora}. \n ${paciente.nome}, você confirma ${paciente.data} (dia) e ${paciente.hora} (horário) escolhidos?`);
-
-                if (confirma == false) {
-                    sobrepeso(paciente.data, paciente.hora)
-                } else {
+                
+                if (confirma) {
                     alert("Obrigado por utilizar nossos serviços")
                 }
+
+                else {
+                    paciente.data = prompt("Qual dia da semana deseja se consultar?");
+                    paciente.hora = prompt("Qual horário deseja se consultar?");    
+                }
+            
             }
 
           function calcularImc() {
