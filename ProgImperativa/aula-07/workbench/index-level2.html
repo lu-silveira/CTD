@@ -20,53 +20,57 @@
             Luiz Claudio
             Vando
             Weslley
+            Pedro Oh
         */
      
       
         function sobrepeso() {
+
             var consulta = window.confirm("Você deseja agendar uma consulta com um nutricionista?");
           
             if (consulta) {
                 var paciente = {
-                nome: prompt("Qual é seu nome?"),
-                data: prompt("Qual dia da semana deseja se consultar?"),
-                hora: prompt("Qual horário deseja se consultar?")    
+                    nome: prompt("Qual é seu nome?"),
+                    data: prompt("Qual dia da semana deseja se consultar?"),
+                    hora: prompt("Qual horário deseja se consultar?")    
                 }
                } else {
-                alert("Agradecemos seu contato.")
+                    alert("Agradecemos seu contato.")
             }
                 
                 var confirma = window.confirm(`Agradecemos seu contato, ${paciente.nome}. Sua consulta com a Dra. Luana Nagydai será em ${paciente.data} no horário escolhido: ${paciente.hora}. \n ${paciente.nome}, você confirma ${paciente.data} (dia) e ${paciente.hora} (horário) escolhidos?`);
-        }
 
-        /* não está funcionando
-        if (confirma == false) {
-            sobrepeso()
-        } else {
-            alert("Obrigado por utilizar nossos serviços")
-        }
-        */
+                if (confirma == false) {
+                    sobrepeso()
+                } else {
+                    alert("Obrigado por utilizar nossos serviços")
+                }
+            }
+
           function calcularImc() {
-            var peso = prompt('Qual seu peso?');
-            var altura = prompt('Qual sua Altura?');
-            var resultadoImc = peso / (altura * altura);
-           var perfilImc = 0;
-           if (resultadoImc < 18.5) {
-                   perfilImc = 'MAGREZA';
-                } else if (resultadoImc <= 24.9) {
-                    perfilImc = 'NORMAL';
-                } else if (resultadoImc <= 29.9) {
-                    perfilImc = 'SOBREPESO';
-                } else if (resultadoImc <= 39.9) {
-                    perfilImc = 'OBESIDADE';
-                }
-                else {
-                    perfilImc ='OBESIDADE GRAVE';
-                }
+                var peso = prompt('Qual seu peso?');
+                var altura = prompt('Qual sua Altura?');
+                var resultadoImc = peso / (altura * altura);
+                var perfilImc = 0;
+
+                if (resultadoImc < 18.5) {
+                    perfilImc = 'MAGREZA';
+                    } else if (resultadoImc <= 24.9) {
+                        perfilImc = 'NORMAL';
+                    } else if (resultadoImc <= 29.9) {
+                        perfilImc = 'SOBREPESO';
+                    } else if (resultadoImc <= 39.9) {
+                        perfilImc = 'OBESIDADE';
+                    }
+                    else {
+                        perfilImc ='OBESIDADE GRAVE';
+                    }
+
             window.confirm(`Seu IMC é iqual a: ${Math.round(resultadoImc * 10 / 10)} e seu perfil é: ${perfilImc}`);
-             if (perfilImc == 'SOBREPESO' || perfilImc == 'OBESIDADE' || perfilImc == 'OBESIDADE GRAVE') {
-                sobrepeso()
-            };
+
+                if (perfilImc == 'SOBREPESO' || perfilImc == 'OBESIDADE' || perfilImc == 'OBESIDADE GRAVE') {
+                    sobrepeso()
+                };
         }
     </script>
 </body>
