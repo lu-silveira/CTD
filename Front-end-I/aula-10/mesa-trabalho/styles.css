@@ -1,0 +1,13 @@
+
+.banner {
+    background-image: url('https://www.guarabiracenter.com.br/wp-content/uploads/2018/04/Home-Four-Banner-Background-Image-2.png');
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    color: #f6f6f6;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
