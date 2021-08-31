@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body {
+    background-image: linear-gradient(to right, black 50%, blue 100%),
+    url('https://www.consultoriarr.com.br/wp-content/uploads/2020/01/img-empreender-em-sao-paulo-o-que-voce-precisa-saber-sobre-o-assunto.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: overlay; 
+
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: orangered;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+}
+.text {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding: 30px;
+    margin: auto;
+    border: dotted;
+    border-radius: 20px;
+   width: 20em;
+   height: 150px;
+   
+}
+
+
+.video {
+    width: 600px;
+    height: 320px;
+    margin: auto;
+    padding-top: 30px;
+    position: relative;
+}
+
+.curiosidades {
+    background-color: rgb(146, 147, 197);
+    border-radius: 25px;
+    opacity: 80%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.fatos {
+    font-family: 'Montserrat', sans-serif;
+}
