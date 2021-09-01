@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        /*
+            1- Os seguintes valores são sempre falsy (falso):
+                false
+                0 (zero)
+                '' ou "" (string vazia)
+                null
+                undefined
+                NaN (Ex: o resultado de 1/0)
+
+            2- Todo o resto é truthy, o que inclui (verdadeiras):
+                '0' (uma string que contenha um simples 0)
+                'false' (uma string que contenha o texto “false”)
+                [] (un array vazio)*
+                {} (um objeto vazio)*
+                function(){} (uma função vazia)
+        */
+
+        // Tipo de variáveis Object
+
+        // Cria o objeto
+        var produto = {
+            // Propriedade (chave: valor)
+            nome: 'Gel Antisséptico',
+            marca: 'Asseptgel',
+            preco: 13.9
+        }
+        // Acessar o objeto
+        alert(produto.nome);
+        alert(produto.marca);
+        alert(produto.preco);
+        // Editar objeto
+        produto.nome = 'Lata de refrigerante';
+        produto.marca = 'Coca-cola';
+        produto.preco = 3.90;
+        // Criar propriedades em objetos existentes
+        produto.categoria = 'Alimentos';
+
+        // Condicionais
+        // Switch case - Trocar caso...
+        var diaDaSemana = 'sexta-feira';
+
+        switch(diaDaSemana) {
+            case 'domingo': 
+                // Instrução
+            break;
+            case 'segunda-feira': 
+                // Instrução
+            break;
+            case 'terça-feira': 
+                // Instrução
+            break;
+            case 'quarta-feira': 
+                // Instrução
+            break;
+            case 'quinta-feira': 
+                // Instrução
+            break;
+            case 'sexta-feira': 
+                // Instrução
+                alert('Sextou!');
+            break;
+            case 'sábado': 
+                // Instrução
+            break;
+            default:
+                alert(`${diaDaSemana} não é um valor válido.`);
+            break;
+        }
+        
+        // If, else if, else - Se, se o outro, outro
+
+        var placarJogador1 = 0;
+        var placarJogador2 = 1;
+
+        var estaVencendo = placarJogador1 > placarJogador2;
+        var estaEmpatado = placarJogador1 == placarJogador2;
+
+        if(estaVencendo) {
+            alert(`Jogador 1 esta vencendo por ${placarJogador1} x ${placarJogador2}`);
+        } 
+        else if(estaEmpatado) {
+            alert(`Jogador 1 esta empatado com Jogador 2 ${placarJogador1} x ${placarJogador2}`);
+        }
+        else {
+            alert(`Jogador 2 esta vencendo por ${placarJogador1} x ${placarJogador2}`);
+        }
+
+    </script>
+</body>
+</html>
