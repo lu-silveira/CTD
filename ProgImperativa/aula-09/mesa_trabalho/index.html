@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09 - Mesa de trabalho</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        
+        //    Converter Fahrenheit para Celsius - Nível I
+         
+        function conversor (num) {
+            return (num - 32) / 1.8;
+        };
+        
+        var valoresEmFahrenheits = [0, 32, 45, 50, 75, 80, 120];
+        var valoresEmCelsius = valoresEmFahrenheits.map(conversor);
+        console.log(valoresEmCelsius);
+        
+            // Filtre nomes com menos de cinco letras - Nível II
+            
+
+        var listaDeNomes = ['Salomão', 'Angela', 'Dayane', 'Willian', 'Ana', 'Paulo', 'Junior', 'Edu', 'Caio', 'Joe', 'Ivo', 'Ivan'];
+
+        var listaDois = listaDeNomes.filter(function(nome){return nome.length < 5;});
+        
+        console.log(listaDois);
+        /*
+            Remova números duplicados e filtre todos os números pares - Nível III (Cereja do bolo)
+
+            
+            
+            
+            Observação: Utilize os metodos filter e every para realizar as operações.
+
+        */
+       // 1.	Remova todos os valores duplicados;
+        var valoresDuplicados = [2, 3, 4, 5, 4, 12, 19, 7, 2, 4, 10, 25, 50, 3, 5];
+        var semDuplicados = [];
+            valoresDuplicados.forEach((i) => {
+                if (!semDuplicados.includes(i)) {
+                    semDuplicados.push(i);
+                }
+            });
+        console.log(semDuplicados);
+       
+        
+        
+        // 2.	Certifique-se que os valores estão duplicados;
+        console.log(semDuplicados.every(function(index){if (index === index) {return true;}}));
+        
+        // 3.	Filtre todos os números pares;
+        var noDouble = semDuplicados.filter(function(par){if (par % 2 === 0) return par});
+        console.log(noDouble);
+    </script>
+</body>
+</html>
