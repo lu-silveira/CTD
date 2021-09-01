@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 2000px;
+}
+
+h1 {
+    text-align: center;
+    padding: 60px;
+}
+
+.um-externo {
+    background-color: mediumblue;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    padding: 50px; 
+    
+}
+
+.dois-externo {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 350px;
+    position: fixed;
+    padding: 50px;
+}
+
+.tres-externo {
+    background-color: orangered;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-left: 75%;
+    padding: 50px;
+}
+
+.um-interno, .dois-interno, .tres-interno {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
