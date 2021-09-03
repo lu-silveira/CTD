@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+
+body {
+    height: 4000px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: darkslateblue
+}
+
+nav {
+    background-color: black;
+    display: inline-block;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    z-index: 100;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+ul, li, a {
+    list-style-type: none;
+    width: 50%;
+    height: 10%;
+    display: inline;
+    float: right;
+    margin-left: 10%;
+    padding: 10px;
+    text-decoration: none;
+    color: #FF8b2b;
+
+ 
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    padding: auto;
+    color: #FF8b2b;
+}
+
+.logo {
+    width: 5%;
+    position: fixed;
+    float: left;
+    display: inline;
+    margin-left: 20px;
+    
+
+}
+.banner {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/677/302/non_2x/abstract-technology-banner-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    display: block;
+    margin-top: 8%;
+    padding-top: 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    background-blend-mode: overlay;
+    
+}
+
+.boxes {
+    color: yellow;
+    width: 80%;
+    height: 40%;
+    z-index: 1;
+    position: relative;
+    padding-top: 30%;
+    padding-left: 10%;
+
+}
+
+.produtos {
+    width: 200px;
+    height: 300px;
+    margin-left: 30%;  
+}
+
+.produto {
+    width: 25%;
+    height: 25%;
+    color: yellow;
+    padding: 50px;
+
+
+}
+
+.posicao-1 {
+    position: absolute;
+    
+}
+
+.posicao-2 {
+    position: relative;
+    margin: auto;
+}
+
+.posicao-3 {
+    position: relative;
+    margin-left: 68%;
+}
