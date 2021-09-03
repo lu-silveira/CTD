@@ -23,20 +23,21 @@ nav {
     padding: 20px;
 }
 
-ul, li, a {
+ul {
     list-style-type: none;
-    width: 50%;
-    height: 10%;
-    display: inline;
     float: right;
-    margin-left: 10%;
-    padding: 10px;
-    text-decoration: none;
-    color: #FF8b2b;
-
- 
+    margin-right: 5%;
+    padding: 20px;
+    
 }
 
+li, a {
+    text-decoration: none;
+    color: #FF8b2b;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+}
 h1 {
     text-align: center;
     margin-top: 50px;
@@ -44,6 +45,10 @@ h1 {
     color: #FF8b2b;
 }
 
+p {
+    display: inline-block;
+    padding: 20px;
+}
 .logo {
     width: 5%;
     position: fixed;
@@ -70,42 +75,50 @@ h1 {
 }
 
 .boxes {
-    color: yellow;
+    box-sizing: border-box;
+    margin-left: 10%;
     width: 80%;
-    height: 40%;
+    height: 50%;
     z-index: 1;
     position: relative;
     padding-top: 30%;
     padding-left: 10%;
+    
 
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 .produtos {
-    width: 200px;
-    height: 300px;
-    margin-left: 30%;  
+    width: 150px;
+    height: 250px;
+    margin-left: 30%;
+    float: center;  
 }
 
 .produto {
-    width: 25%;
+    width: 20%;
     height: 25%;
-    color: yellow;
-    padding: 50px;
-
-
+    
 }
 
 .posicao-1 {
     position: absolute;
+    float: left;
     
 }
 
 .posicao-2 {
     position: relative;
-    margin: auto;
+    margin-left: 30%;
+    float: left;
 }
 
 .posicao-3 {
     position: relative;
-    margin-left: 68%;
+    margin-left: 70%;
+    float: left;
 }
