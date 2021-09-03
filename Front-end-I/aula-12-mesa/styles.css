@@ -7,9 +7,10 @@
 }
 
 body {
-    height: 4000px;
+    height: 300px;
     font-family: 'Montserrat', sans-serif;
-    background-color: darkslateblue
+    background-color:  darkblue;
+    background: linear-gradient(to bottom right, blue, gray);
 }
 
 nav {
@@ -48,6 +49,13 @@ h1 {
 p {
     display: inline-block;
     padding: 20px;
+    color: #FF8b2b;
+}
+
+footer {
+    width: 100%;
+    margin-top: 90%;
+    text-align: center;
 }
 .logo {
     width: 5%;
@@ -66,9 +74,9 @@ p {
     height: 25%;
     position: absolute;
     display: block;
-    margin-top: 8%;
+    margin-top: 7%;
     padding-top: 20px;
-    border-radius: 20px;
+    
     font-size: 30px;
     background-blend-mode: overlay;
     
@@ -78,7 +86,7 @@ p {
     box-sizing: border-box;
     margin-left: 10%;
     width: 80%;
-    height: 50%;
+    height: 30%;
     position: relative;
     padding-top: 30%;
     padding-left: 10%;
@@ -120,6 +128,15 @@ p {
 
 .posicao-3 {
     position: relative;
-   margin-right: 25%;
+    margin-left: 12%;
     float: left;
+}
+
+.info {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.whatsapp {
+    padding-left: 300px;
 }
