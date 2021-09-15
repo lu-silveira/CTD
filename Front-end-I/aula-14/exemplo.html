@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <img class="logo" src="https://static.wixstatic.com/media/00f415_6de026c3be44478498798cdd1566a931~mv2.png/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/nijas-aiqfome-suporte-01.webp" alt="aiqfome-logomarca">
+
+        
+    </header>
+
+
+    <div class="bolinho">
+        <img class="bolo" src="https://img.elo7.com.br/product/zoom/18AA549/adesivo-bolo-torta-cafe-doce-doceria-j20-adesivo-mercado.jpg">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptas, magnam aperiam! Omnis labore consequatur commodi aut dolorum dignissimos quia ratione.<br><strong>Peso: 1.5kg</strong></p>
+
+    </div>
+    <form  class="bolinho">
+        
+            <label for="cobertura">Cobertura</label>
+
+            <input type="checkbox" name="cobertura"     value="1"><span     class="topping">Chocolate</span>
+
+            <input type="checkbox" name="cobertura"     value="2" class="topping"><span     class="topping">Chantilly</span>
+            
+            <input type="checkbox" name="cobertura" value="3" class="topping"><span  class="topping">Sem cobertura</span>
+        
+        
+        <fieldset>
+            <legend>Cadastro</legend>
+        
+        <div class="form-input">
+
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Insira seu email" required>
+            <label id="name-label" for="name">Nome</label>
+            <input type="name" name="name" class="form-control" placeholder="Insira seu nome" required>
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Localização</legend>
+            <div>
+                <label for="address">Endereço</label>
+                <input type="address" name="address" class="form-control" placeholder="Endereço" required>
+                    <label for="city">Cidade</label>
+                <input type="city" name="city" class="form-control" placeholder="Cidade" required>
+                <label for="bairro">Bairro</label>
+                <select id="dropdown" name="bairro" class="form-control" required>
+                        <option disabled>Escolha seu bairro</option>
+
+                        <optgroup label="Zona Oeste">
+                            <option value="1"> Água Branca</option>
+                            <option value="2"> Barra Funda</option>
+                            <option value="3"> Lapa</option>
+                            <option value="4"> Perdizes</option>
+                            <option value="5"> Santa Cecília</option>
+                            <option value="6"> Freguesia do Ó</option>
+                        </optgroup>    
+
+                        <optgroup label="Zona Norte">
+                            <option value="1"> Santana</option>
+                            <option value="2"> Horto Florestal</option>
+                            <option value="3"> Brasilândia</option>
+                            <option value="4"> Limão</option>
+                            <option value="5"> Casa Verde</option>
+                            <option value="6"> Pirituba</option>
+                        </optgroup>  
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend> Forma de Pagamento</legend>
+            <div>
+                
+                <input type="radio" id="credito" class="pagto">
+                    <label for="credito" class="pagto">Cartão de Crédito</label><br>
+                <input type="radio" id="dinheiro" class="pagto">
+                    <label for="dinheiro" class="pagto">Dinheiro</label><br>
+                <input type="radio" id="pix" class="pagto">
+                    <label for="pix" class="pagto">Pix</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <button type="submit" id="submit" class="submit-button"> 
+                Enviar
+            </button>
+            <button type="reset" id="reset" class="reset-button">
+                Limpar
+            </button>
+        </div>
+
+</body>
+</html>

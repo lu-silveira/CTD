@@ -1,0 +1,41 @@
+
+button {
+    border: none;
+    padding: 12px 24px;
+    background-color: yellow;
+    color: blue;
+    transition-duration: 1s;
+}
+
+button:hover {
+    background-color: maroon;
+}
+
+input {
+
+    background-color: #d1d1d1;
+    border: none;
+}
+
+input:hover {
+    padding: 20px;
+}
+
+input:focus {
+
+    background-color: whitesmoke;
+}
+
+/*
+input:disabled {
+ DESABILITA O FOCUS
+
+     opacity: .2;
+}
+*/
+input:valid {
+    border: 1px solid green;
+}
+.hover-container:hover input {
+    display: block;
+}
