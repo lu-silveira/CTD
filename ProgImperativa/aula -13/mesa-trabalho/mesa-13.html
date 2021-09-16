@@ -28,12 +28,12 @@ var cliente = {
     numeroDaConta: "98765",
     saldoAtual: 1000.00,
     deposito: function (valor) {
-        this.saldoAtual = this.saldoAtual + valor;    
+        this.saldoAtual += valor;    
         return `Você depositou R$ ${valor}. Seu saldo atual é R$ ${this.saldoAtual}`;
         },
     saque: function (cash) {
         if (this.saldoAtual > cash) {
-            this.saldoAtual = this.saldoAtual - cash;
+            this.saldoAtual -= cash;
         return `Você sacou R$ ${cash}. Seu saldo atual é R$ ${this.saldoAtual}`;
         } else {
             return `Saldo insuficiente. Seu saque de ${cash} não foi realizado. Saldo atual: ${this.saldoAtual}`

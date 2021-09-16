@@ -21,5 +21,8 @@ while (pares<=100) {
 }
 
 //3. app números pares e ímpares
+let number = 11;
+let parOuImpar = 1;
+
 
 //4. app média da sala

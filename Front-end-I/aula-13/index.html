@@ -11,7 +11,10 @@
     <div>
 
         <form>
-
+            <!-- <img src="https://marcas-logos.net/adidas-logo/"> -->
+            <fieldset>
+                <legend>Cadastro</legend>
+            
             <div class="form-input">
 
                 <label id="email-label" for="email">Email</label>
@@ -20,23 +23,28 @@
             </div>
 
             <div>
+            </fieldset>
 
-                <p> Ocupação</p>
+            <fieldset>
+                <legend> Ocupação</legend>
                 <select id="dropdown" name="ocupação" class="form-control" required>
-                    
-                    <option disabled>Escolha sua ocupação</option>
-                    <option value="student"> Estudante</option>
-                    <option value="full-time">Período Integral</option>
-                    <option value="part-time">Meio Período</option>
+                    <optgroup label="Half-assed">
+                        <option disabled>Escolha sua ocupação</option>
+                        <option value="student"> Estudante</option>
+                        <option value="part-time">Meio Período</option>
+                    </optgroup>
+                
+                    <option value="full-time">Período Integral</option>    
                     <option value="intern">Trainee</option>
                     <option value="do-not-say">Não é da sua conta ;D </option>
                 </select>
-
+            </fieldset>
             </div>
-            <p>Comentário:</p>
-            <textarea id="commentary" name="comment" class="inputTextArea" cols=50 rows=5 placeholder="Deixe aqui seu comentário">
-            </textarea>
-
+            <fieldset>
+            <legend>Comentários:</legend>
+                <textarea id="commentary" name="comment" class="inputTextArea" cols=20 placeholder="Deixe aqui seu comentário">
+                </textarea>
+            </fieldset>
             <button type="submit" id="submit" class="submit-button"> 
                 Enviar
                 </button>

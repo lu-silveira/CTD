@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+  /*
+            Atividade I: Converta o documento html para javascript
+            Atividade II: Converta objeto literal em função construtora
+            Atividade III: Divida o código em módulo
+            Atividade IV: Importe o módulo para o documento principal
+        */
+
+        function ContaBancaria (deposito, saque) {
+
+this.nome = "NomeCompletoDoUsuario",
+this.numeroDaAgencia = "123",
+this.numeroDaConta = "98765",
+this.saldoAtual = 1000.00,
+this.visualizarSaldo = 
+    function () {
+        return `Seu saldo atual é R$ ${this.saldoAtual}`;
+    },
+this.deposito = function (valor) {
+    this.saldoAtual += valor;    
+    return `Você depositou R$ ${valor}. Seu saldo atual é R$ ${this.saldoAtual}`;
+    },
+
+    this.saque = function (saque) {
+    if (this.saldoAtual > saque) {
+        this.saldoAtual -= saque;
+    return `Você sacou R$ ${saque}. Seu saldo atual é R$ ${this.saldoAtual}`;
+    } else {
+        return `Saldo insuficiente. Seu saque de ${cash} não foi realizado. Saldo atual: ${this.saldoAtual}`
+    }
+}
+}
+
+
+</script>
+    
+</body>
+</html>

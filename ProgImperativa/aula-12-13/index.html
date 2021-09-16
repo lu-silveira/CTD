@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 12 - Métodos Array</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        /*
+            Array.map();
+            Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+        */
+
+        var valoresNumericos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 12, 5, 8, 130, 44];
+
+        var dobrarValores = valoresNumericos.map(function(elemento, indice, valorInicial) {
+            // Apresentar qual valor existe dentor de cada parametro;
+            // console.log(`elemento: ${elemento}, indice: ${indice}, valor inicial: ${valorInicial}`);
+            
+            return elemento * 2;
+        });
+
+        console.log('map()', dobrarValores);
+
+        /* 
+            Array.filter();
+            Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+        */
+
+        var filtrarValoresDuplicados = valoresNumericos.filter(function(elemento, indice, valorInicial) {
+            return valorInicial.indexOf(elemento) == indice;
+        });
+        
+        console.log('filter()', filtrarValoresDuplicados);
+
+        /*
+            Array.reduce();
+            Documentaçao: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+        */
+
+        var somarTodosOsValores = valoresNumericos.reduce(function(valorAcumulador, valorAtual, indiceAtual, arrayOriginal) {
+            // console.log('Acumulador', valorAcumulador);
+            // console.log('Valor atual', valorAtual);
+            // console.log('Indice atual', indiceAtual);
+            // console.log('Array original', arrayOriginal);
+            
+            return valorAcumulador + valorAtual;
+        });
+
+        console.log('reduce()', somarTodosOsValores);
+
+        /*
+            Array.every();
+            Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+        */
+
+        var todosOsValoresSaoMaioresQueDez = valoresNumericos.every(function(valor) {
+            return valor > 10;
+        });
+
+        console.log('every()', todosOsValoresSaoMaioresQueDez);
+
+        /*
+            Array.some();
+            Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+        */
+
+        var peloMenosUmValorEhMaiorQueDez = valoresNumericos.some(function(valor) {
+            return valor > 10;
+        });
+
+        console.log('some()', peloMenosUmValorEhMaiorQueDez);
+
+        /*
+            Array.find();
+            Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+        */
+
+        // Exemplo 1
+
+        var cardapioDePizzas = ['Mussarela', 'Calabresa', 'Portuguesa', 'Margerita'];
+
+        var buscarPizza = cardapioDePizzas.find(function(pizza){
+            return pizza.startsWith('M');
+        });
+
+        console.log('find()', buscarPizza);
+
+        // Exemplo 2
+
+        var listaDeFrutas = [
+            {
+                nome: 'Jaca',
+                quantidade: 2
+            },
+            {
+                nome: 'Banana',
+                quantidade: 0
+            },
+            {
+                nome: 'Cereja',
+                quantidade: 5
+            }
+        ];
+
+        var buscarFruta = listaDeFrutas.find(function(fruta) {
+            return fruta.nome == 'Cereja';
+        });
+
+        //console.log('find()', buscarFruta);
+
+        /*
+            Array.includes();
+            Documentação: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+            O método includes() determina se um array contém um determinado elemento, retornando true ou false apropriadamente.
+        */
+
+       // Exemplo 1
+
+        var listaDeNomes = ['Willian', 'Juliana', 'Rosanea', 'Dayane'];
+
+        var buscarEVerificarSeUmNomeExiste = listaDeNomes.includes('W');
+
+        console.log('includes()', buscarEVerificarSeUmNomeExiste);
+
+        // Exemplo 2
+
+        var listaDeUsuarios = [
+            {
+                nome: 'Willian',
+                idade: 31,
+                cidade: 'Rio de Janeiro'
+            },
+            {
+                nome: 'Camila',
+                idade: 23,
+                cidade: 'Minas Gerais'
+            },
+            {
+                nome: 'Rodrigo',
+                idade: 48,
+                cidade: 'Bahia'
+            },
+            {
+                nome: 'Priscila',
+                idade: 69,
+                cidade: 'Acre'
+            },
+            {
+                nome: 'Carol',
+                idade: 17,
+                cidade: 'Rio de Janeiro'
+            },
+        ];
+
+        var buscarPorUsuario = listaDeUsuarios.filter(function(usuario) {
+            return usuario.nome.includes('Ca');
+        });
+
+        console.log('filter() e includes()', buscarPorUsuario);
+
+        /*
+            Extra
+            
+            String 
+            https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String
+            https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/Useful_string_methods
+        */
