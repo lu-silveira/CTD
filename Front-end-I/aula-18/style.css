@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-areas: 'header header' 'aside main' 'footer footer';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+
+body header {
+    grid-area: header;
+    display: flex;
+    background-color: darkslategray;
+    /* width: 100%; */
+    height: 100px;
+    position: sticky; /*congelar painel */
+    top: 0px; /* onde congelar o painel */
+    z-index: 2;
+}
+
+body aside {
+    grid-area: aside;
+    display: flex;
+    background-color: rgb(22, 49, 49);
+    z-index: 1;
+    position: sticky;
+    /* position: fixed; */
+}
+
+body aside ul {
+    position: fixed;
+    z-index: 1;
+}
+body main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(47, 124, 134, 0.644);
+    /* min-height: 100vh; */
+    gap: 20px;
+    padding: 24px;
+}
+
+body section {
+    grid-area: main;
+    /* background-color: cadetblue; */
+    /* height: 100vh; */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    /* flex: 3 auto; */
+}
+/* body footer {
+    grid-area: footer;
+    display: flex;
+    background-color: green;
+    width: 100%;
+    height: 150px;
+} */
+
+
+ul {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color: whitesmoke;
+    list-style: none;
+}
+
+li {
+    padding: 30px;
+}
+
+
+.logo {
+    width: 150px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.principal {
+    width: 95%;
+    height: 400px;
+   
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    padding: 30px;
+    font-size: 2.3rem;
+    color: #f6f6f6;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    line-height: 2;
+    font-size: 16px;
+}
