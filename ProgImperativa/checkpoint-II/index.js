@@ -50,7 +50,7 @@ let produtos = [
   
   let mostrarItensDoCarrinho = carrinho.map((item)=>{
   
-    return (' ' + item.nome + ' R$' + item.valor);
+    return (`${item.nome} ${item.valor}`);
   
   });
   
