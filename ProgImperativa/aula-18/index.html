@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        body {
+            color: whitesmoke;
+            font-family: monospace;
+            display: flexbox;
+            }
+
+        main {
+            width: 30%;
+            height: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            border: none;
+            background-color: navy;
+            border-radius: 10px;
+            padding: 50px;
+            align-self: center;
+        }
+
+        h1 {
+            font-weight: bolder;
+            font-size: 2rem;
+            padding: 10px 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            padding: 10px 20px;
+        }
+
+        section {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: lightblue;
+            color: black;
+            transition: 0.7s;
+        }
+
+        button:hover {
+            background-color: orangered;
+            color: white;
+        }
+
+        #author {
+            font-size: 13px;
+        }
+
+    </style>
+    <main>
+        <h1> Este é um teste de Redirecionamento</h1>
+        <p>Clique no botão abaixo e siga o coelho branco até o Google</p>
+        
+        <section>
+            <button onclick="levaProGoogle()">Clica Ni Mim</button>
+        
+            <p id="author">LSilveira 2021</p>
+        </section>
+    </main>
+
+
+    <script>
+       function levaProGoogle () {
+           var querGoogle = window.confirm("Tem certeza que deseja visitar o Google?"); 
+           if (querGoogle) {
+               window.location.href = 'http://www.google.com.br';
+           } else {
+               alert("Se mudar de ideia, clique novamente no botão a qualquer momento")
+           }
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "aula-18",
+  "version": "1.0.0",
+  "description": "mesa-de-trabalho-aula-18",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lsilveira",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
