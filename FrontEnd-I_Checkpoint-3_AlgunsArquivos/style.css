@@ -1,0 +1,33 @@
+/*
+    ADD AO CSS PRINCIPAL
+*/
+
+.depoimentos {
+    text-align: center;
+    padding: 100px;
+}
+.fatos {
+    width: 70%;
+    margin: 200px auto 200px auto;
+    padding: 50px; 
+    text-align: left;
+}
+.text-break {
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.fatos1 {
+    width: 25%;
+    height: 10%;
+    float: left;
+    margin-right: 300px;
+}
+
+.fatos2{
+    width: 25%;
+    height: 10%;
+    float: right;
+    margin-left: 300px;
+
+}
