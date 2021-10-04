@@ -2,6 +2,14 @@
     ADD AO CSS PRINCIPAL
 */
 
+/*
+
+DEPOIMENTOS/SAIBA MAIS
+
+*/
+
+
+
 .depoimentos {
     text-align: center;
     padding: 100px;
@@ -29,5 +37,62 @@
     height: 10%;
     float: right;
     margin-left: 300px;
+}
 
+.cor-cartao {
+ background-color: #bdfff5;
+}
+
+.btn-cartao {
+    display: flex;
+}
+.veja-mais {
+    padding: 5px 40px;
+    align-items: flex-start;
+    background-color: #eb7aae;
+    border-radius:10px;
+    color: #faf5f5;  
+}
+
+.veja-mais:hover {
+    background-color: #c2467f;
+    color: white;
+}
+
+/*
+ ---- LOGIN ----
+*/
+.login {
+    background-color: #ffaed3;
+}
+
+/* 
+
+------ FORMULÁRIO
+
+*/
+
+
+.formulario {
+    background-color: aquamarine;
+    display: grid;
+}
+
+.forms {
+    border-radius: 20px;
+    padding: 3rem;
+    width: 60%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to bottom right, #eb7aa3, #ffaed3);   
+}
+
+.botao-form {
+    transition: background-color 1s ease-out 100ms;
+    color: whitesmkoke;
+}
+
+.botao-form:hover {
+    background-color: purple;
 }
