@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="css/form.css" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+
+
+<body class="teste">
+    <main class="formulario">
+        <form class="forms row g-3">
+
+                    <legend class="col-form-label-lg newsletter">Receba nossa newsletter!</legend>
+                
+                    <div class="form-floating col-md-6 mb-3">
+    
+                        <label for="nome-cadastro" class="col-form-label-lg">Nome</label>
+                        <input type="name" aria-describedby="nomeCadastro" id="nome-para-cadastro" class="form-control form-control-lg" required>
+        
+                    </div>
+
+                    <div class="form-floating col-md-6 mb-3">
+    
+                        <label for="email-label" class="col-form-label-lg">Email</label>
+                        <input type="email" name="email" class="form-control form-control-lg is-invalid" required>
+    
+                     </div>
+
+            <div class="row g-3">
+           
+
+                <legend>Principais Interesses</legend>
+                    <select class="tamanho-select mb-3 col-md-6 form-select" 
+                    multiple aria-label="multipla-escolha">
+                        <optgroup label="Prevenção">
+                            <option disabled>Prevenção</option>
+                            <option value="atividade-fisica">Como praticar atividade física</option>
+                            <option value="alimentacao">Dicas de alimentação</option>
+                            <option value="habito-saudavel">Tópicos de hábitos saudáveis</option>
+                            <option value="auto-exame">Auto-exame</option>
+                        </optgroup>
+                    
+                        <optgroup label="Informação">
+                            <option disabled>Informação</option>
+                            <option value="seminarios">Divulgação de seminários e palestras</option>
+                            <option value="alimentacao">Dados e estatísticas</option>
+                            <option value="habito-saudavel">Notícias e descobertas</option>
+                            
+                        </optgroup>
+                    </select>
+
+                </div>
+                
+
+                <div class="form-floating mb-3">
+                    <label for="inputTextArea">Comentários</label>
+                            <textarea class="form-control" name="comment" id="inputTextArea">
+                            </textarea>
+                </div>   
+
+                        <div class="d-grid gap-2 d-md-block">
+                            <button class="btn botao-form" type="submit">ENVIAR</button>
+                            <button class="btn botao-form" type="reset">LIMPAR</button>
+                        </div>
+               
+        </form>
+
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
