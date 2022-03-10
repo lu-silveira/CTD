@@ -4,6 +4,17 @@
 
 /*
 
+ajustando o body
+
+*/
+
+.teste {
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+
+/*
+
 DEPOIMENTOS/SAIBA MAIS
 
 */
@@ -74,7 +85,7 @@ DEPOIMENTOS/SAIBA MAIS
 
 
 .formulario {
-    background-color: aquamarine;
+   
     display: grid;
 }
 
@@ -90,7 +101,7 @@ DEPOIMENTOS/SAIBA MAIS
 
 .botao-form {
     transition: background-color 1s ease-out 100ms;
-    color: whitesmkoke;
+    color: whitesmoke;
 }
 
 .botao-form:hover {

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+
+.main-title {
+    color: red;
+    font-size: 24px;
+}
+
+.main-menu {
+    background-color: aquamarine;
+    padding: 12px;
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    right: -200px;
+    transition: .4s;
+}
+
+.main-menu-opened {
+    right: 0;
+}

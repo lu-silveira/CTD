@@ -54,5 +54,10 @@ let produtos = [
   
   });
   
+  carrinho.forEach(function(item){
+    console.log(`Os itens do carrinho são ${mostrarItensDoCarrinho}. 
+              A soma total do carrinho é R$ ${somarValorDoCarrinho}`)
+  }
+  
   console.log(`Os itens do carrinho são ${mostrarItensDoCarrinho}. 
-  A soma total do carrinho é R$ ${somarValorDoCarrinho}`);
+               A soma total do carrinho é R$ ${somarValorDoCarrinho}`)
